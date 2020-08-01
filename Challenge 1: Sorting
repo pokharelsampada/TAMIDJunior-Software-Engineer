@@ -5,6 +5,7 @@ k= 4
  
 #MyCode
 
-sortArrays = sorted(Array1 + Array2)
-print(sortArrays[:k])
+print((sorted(Array1 + Array2)[:k]))
+
+
 
