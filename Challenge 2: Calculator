@@ -1,0 +1,79 @@
+#Challenge 2
+
+#My Code #1
+
+def main():
+    first = str(input("Would you like to calculate something? Answer with y or n."))    
+    while first == "y":
+        first = TAMIDcalculator()
+    print("Thanks for coming!")
+    
+print("Welcome to the TAMID Calculator!")   
+
+def TAMIDcalculator(): 
+        fNumber = int(input("Please enter the first number"))
+        sNumber = int(input("Please enter your second number"))
+        function = str(input("Please choose a function(+,-,*,/,%)."))
+        if function == "+":
+            print(" Your result was " + str(fNumber + sNumber))
+        elif function == "-":
+            print(" Your result was " + str(fNumber - sNumber)) 
+        elif function == "*":
+            print(" Your result was " + str(fNumber * sNumber))
+        elif function == "/":
+            if sNumber == 0:
+                print ("Error. You can't divide by 0!")
+            else:
+                print(" Your result was " + str(fNumber / sNumber))
+        elif function == "%":
+            print(" Your result was " + str(fNumber % sNumber))
+        again = str(input("Would you like to calculate something? Answer with y or n."))
+        return again
+              
+main()
+
+
+#My Code #2
+
+
+def add(fNumber, sNumber):
+    return (fNumber + sNumber)
+def sub(fNumber, sNumber):
+    return (fNumber - sNumber)
+def mul(fNumber, sNumber):
+    return (fNumber * sNumber)
+def div(fNumber, sNumber):
+    return (fNumber / sNumber)
+def mod(fNumber, sNumber):
+    return (fNumber % sNumber)
+
+def main():
+    first = str(input("Would you like to calculate something? Answer with y or n."))    
+    while first == "y":
+        first = TAMIDcalculator()
+    print("Thanks for coming!")
+    
+print("Welcome to the TAMID Calculator!")   
+
+def TAMIDcalculator(): 
+        fNumber = int(input("Please enter the first number"))
+        sNumber = int(input("Please enter your second number"))
+        function = str(input("Please choose a function(+,-,*,/,%)."))
+        if function == "+":
+            ans = add(fNumber, sNumber)
+        elif function == "-":
+            ans = sub(fNumber, sNumber)
+        elif function == "*":
+            ans = mul(fNumber, sNumber)
+        elif function == "/":
+            if sNumber == 0:
+                print ("Error. You can't divide by 0!")
+            else:
+                ans = div(fNumber, sNumber)
+        elif function == "%":
+            ans = mod(fNumber, sNumber)
+        print("Your answer is " , ans)
+        again = str(input("Would you like to calculate something? Answer with y or n."))
+        return again
+              
+main()
