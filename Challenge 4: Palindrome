@@ -1,0 +1,17 @@
+#Challenge4
+
+def main():
+    isPalindrome()
+
+    
+def isPalindrome():
+    word = str(input("Please enter a string."))
+    revWord = ""
+    for i in word:
+        revWord = i + revWord 
+    if revWord == word:
+        print( word + " is a palindrome!")
+    else:
+        print( word + " is not a palindrome!")
+        
+main()
