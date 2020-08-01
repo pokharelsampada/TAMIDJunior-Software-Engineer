@@ -6,6 +6,3 @@ k= 4
 #MyCode
 
 print((sorted(Array1 + Array2)[:k]))
-
-
-
