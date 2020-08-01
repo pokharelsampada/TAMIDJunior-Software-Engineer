@@ -1,0 +1,21 @@
+#Challenge 3
+
+listHa = ["TAMID", "IS", "THE", "COOLEST"]
+numberCount = []
+
+def starBox():
+    tracker = 0
+    for a in range(0,len(listHa)):
+        numberCount.append(len(listHa[a]))
+    for b in range(0, len(numberCount)): 
+        if numberCount[b] > tracker:
+            tracker = numberCount[b]
+    
+    print("*"* (tracker + 4))
+    
+    for i in range(0, len(listHa)):
+        print("* " + listHa[i] + " "*(tracker - numberCount[i]) + " *")
+    
+    print("*"* (tracker + 4))
+    
+starBox()
